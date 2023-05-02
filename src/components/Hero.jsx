@@ -6,14 +6,14 @@ import calories from "../assets/calories.png";
 
 const Hero = () => {
   return (
-    <div className="hero flex justify-between">
-      <div className="left w-[75%] flex gap-8 flex-col">
+    <div className="hero flex flex-col gap-6 lg:gap-0 lg:flex-row justify-between">
+      <div className="left w-full lg:w-[75%] flex gap-8 flex-col">
         <Header />
 
         <div className="px-4">
           <div className="mt-16 rounded-[4rem] text-white uppercase bg-[#363d42] w-fit py-5 px-3 flex items-center justify-start z-10 relative">
             <div className="absolute bg-[var(--orange)] w-20 h-[80%] left-2 rounded-[3rem] z-20"></div>
-            <span className="z-30">
+            <span className="z-30 text-[12px] sm:text-lg">
               Transform your body, transform your life!
             </span>
           </div>
@@ -77,12 +77,12 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="right w-[25%] p-4 bg-[var(--orange)] relative">
-        <button className="btn absolute right-12 top-8 bg-white">
+      <div className="right w-full lg:w-[25%] p-4 bg-[var(--orange)] relative">
+        <button className="btn absolute right-2 sm:right-16 top-6 bg-white">
           Join Now
         </button>
 
-        <div className="heart-rate flex flex-col gap-4 bg-[var(--darkGrey)] w-fit p-4 items-center rounded-lg absolute right-16 top-28">
+        <div className="heart-rate flex flex-col gap-4 bg-[var(--darkGrey)] w-fit p-4 items-center rounded-lg absolute right-2 sm:right-16 top-28">
           <img src={heart} alt="heart" className="w-8" />
           <span className="text-[var(--gray)]">Heart Rate</span>
           <span className="text-white text-xl">112 bpm</span>
@@ -91,12 +91,12 @@ const Hero = () => {
         <img
           src={heroImg}
           alt="man with muscle"
-          className="absolute top-40 right-32 w-80"
+          className="lg:absolute lg:top-40 lg:right-32 w-60 lg:w-80"
         />
         <img
           src={heroImgBack}
-          alt="animation behint the pic"
-          className="absolute top-16 right-96 -z-10 w-60"
+          alt="animation behind the pic"
+          className="hidden lg:block absolute top-16 right-96 -z-10 w-60"
         />
 
         {/* <div className="calories flex gap-8 rounded-lg bg-[var(--caloryCard)] w-max p-4 absolute top-[32rem] right-[28rem]">

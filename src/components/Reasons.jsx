@@ -9,14 +9,20 @@ import tick from "../assets/tick.png";
 
 const Reasons = () => {
   return (
-    <div className="reasons px-8 flex">
+    <div className="reasons px-8 flex gap-4 flex-col-reverse sm:flex-row">
       <div className="left">
         <img src={image1} alt="bodybuilder man" />
         <img src={image2} alt="bodybuilder man" />
         <img src={image3} alt="bodybuilder man" />
         <img src={image4} alt="bodybuilder man" />
       </div>
-      <div className="right"></div>
+      <div className="right">
+        <span>Some reasons</span>
+        <div>
+          <span className="stroke">Why</span>
+          <span>Chose us?</span>
+        </div>
+      </div>
     </div>
   );
 };
