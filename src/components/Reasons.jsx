@@ -9,7 +9,7 @@ import tick from "../assets/tick.png";
 
 const Reasons = () => {
   return (
-    <div className="reasons px-8 pb-4 flex gap-4 flex-col-reverse sm:flex-row">
+    <div className="reasons px-8 flex gap-4 flex-col-reverse sm:flex-row">
 
       <div className="left flex gap-4 w-full">
         <div className="w-[30%]">

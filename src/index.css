@@ -80,3 +80,32 @@ body {
   width: 2rem;
   height: 2rem;
 }
+
+.plan:nth-child(2) {
+  background: var(--planCard);
+  transform: scale(1.1);
+}
+
+.plan > :nth-child(2) {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.plan > :nth-child(3) {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.plan > :nth-child(5) {
+  font-size: .8rem;
+}
+
+.plan:nth-child(2) .btn {
+  color: var(--orange);
+}
+
+/* .testimonials .right img {
+  width: 17rem;
+  height: 20rem;
+  object-fit: cover;
+} */
