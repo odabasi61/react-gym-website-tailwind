@@ -3,7 +3,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Programs = () => {
   return (
-    <div className="programs flex flex-col gap-8 px-2 pb-8">
+    <div className="programs flex flex-col gap-8 px-2 pb-4">
       <div className="programs-header flex flex-col text-center sm:flex-row gap-4 justify-center uppercase italic font-bold text-2xl md:text-3xl lg:text-4xl xl:text-6xl text-white">
         <span className="stroke">Explore our</span>
         <span>programs</span>
