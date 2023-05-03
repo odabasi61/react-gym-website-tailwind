@@ -97,15 +97,15 @@ body {
 }
 
 .plan > :nth-child(5) {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .plan:nth-child(2) .btn {
   color: var(--orange);
 }
 
-/* .testimonials .right img {
-  width: 17rem;
-  height: 20rem;
-  object-fit: cover;
-} */
+.join hr {
+  width: 10rem;
+  border: 2px solid var(--orange);
+  border-radius: 20%;
+}
