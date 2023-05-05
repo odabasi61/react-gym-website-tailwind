@@ -6,7 +6,7 @@ import calories from "../assets/calories.png";
 
 const Hero = () => {
   return (
-    <div className="hero flex flex-col gap-6 lg:gap-0 lg:flex-row justify-between">
+    <div className="hero flex flex-col gap-6 lg:gap-0 lg:flex-row justify-between pb-16 lg:pb-24">
       <div className="left w-full lg:w-[75%] flex gap-8 flex-col">
         <Header />
 

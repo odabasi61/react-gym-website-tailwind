@@ -4,7 +4,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Plans = () => {
   return (
-    <div className="plans-container">
+    <div className="plans-container pb-16 lg:pb-24">
       <div className="programs-header flex flex-col text-center sm:flex-row gap-4 pb-8 justify-center uppercase italic font-bold text-2xl md:text-3xl lg:text-4xl xl:text-6xl text-white">
         <span className="stroke">Ready to start</span>
         <span>your journey</span>
@@ -13,7 +13,10 @@ const Plans = () => {
 
       <div className="plans flex flex-col sm:flex-row items-center justify-center gap-6 px-4">
         {plansData.map((plans, i) => (
-          <div key={i} className="plan flex flex-col bg-[var(--caloryCard)] p-4 text-white gap-4 w-60">
+          <div
+            key={i}
+            className="plan flex flex-col bg-[var(--caloryCard)] p-4 text-white gap-4 w-60"
+          >
             {plans.icon}
             <span>{plans.name}</span>
             <span>$ {plans.price}</span>
@@ -24,12 +27,12 @@ const Plans = () => {
                   <span>{feature}</span>
                 </div>
               ))}
-                </div>
-                <div className="flex items-center gap-2">
-                    <span>See more benefits </span>
-                    <AiOutlineArrowRight className="text-2xl" />
-                </div>
-                <button className="btn bg-white text-black">Join now</button>
+            </div>
+            <div className="flex items-center gap-2">
+              <span>See more benefits </span>
+              <AiOutlineArrowRight className="text-2xl" />
+            </div>
+            <button className="btn bg-white text-black">Join now</button>
           </div>
         ))}
       </div>

@@ -41,6 +41,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -102,10 +106,4 @@ body {
 
 .plan:nth-child(2) .btn {
   color: var(--orange);
-}
-
-.join hr {
-  width: 10rem;
-  border: 2px solid var(--orange);
-  border-radius: 20%;
 }

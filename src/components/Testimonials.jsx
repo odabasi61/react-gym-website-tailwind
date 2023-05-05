@@ -7,7 +7,7 @@ const Testimonials = () => {
   const testimonialLength = testimonialsData.length;
 
   return (
-    <div className="testimonials flex flex-col md:flex-row gap-4 px-4">
+    <div className="testimonials flex flex-col md:flex-row gap-4 px-4 pb-16 lg:pb-24">
       <div className="left w-full md:w-1/2">
         <div className="programs-header flex flex-col gap-4 justify-center uppercase italic font-bold text-2xl md:text-3xl lg:text-4xl xl:text-6xl text-white">
           <span className="text-[var(--orange)] text-2xl">Testimonials</span>
@@ -37,7 +37,7 @@ const Testimonials = () => {
         />
         <div className="arrows flex gap-4 pt-4 justify-center md:justify-normal">
           <AiOutlineArrowLeft
-            className="bg-white text-gray-600 rounded-full text-4xl p-1 hover:scale-105 duration-300 cursor-pointer"
+            className="bg-white text-[var(--orange)] hover:bg-[var(--orange)] hover:text-white rounded-full text-4xl p-1 hover:scale-105 duration-300 cursor-pointer"
             onClick={() => {
               selected === 0
                 ? setSelected(testimonialLength - 1)
@@ -45,7 +45,7 @@ const Testimonials = () => {
             }}
           />
           <AiOutlineArrowRight
-            className="bg-white text-gray-600 rounded-full text-4xl p-1 hover:scale-105 duration-300 cursor-pointer"
+            className="bg-white text-[var(--orange)] hover:bg-[var(--orange)] hover:text-white rounded-full text-4xl p-1 hover:scale-105 duration-300 cursor-pointer"
             onClick={() => {
               selected === testimonialLength - 1
                 ? setSelected(0)
