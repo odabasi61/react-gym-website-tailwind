@@ -7,7 +7,10 @@ const Testimonials = () => {
   const testimonialLength = testimonialsData.length;
 
   return (
-    <div className="testimonials flex flex-col md:flex-row gap-4 px-4 pb-16 lg:pb-24">
+    <div
+      name="testimonial"
+      className="testimonials flex flex-col md:flex-row gap-4 px-4 pb-16 lg:pb-24"
+    >
       <div className="left w-full md:w-1/2">
         <div className="programs-header flex flex-col gap-4 justify-center uppercase italic font-bold text-2xl md:text-3xl lg:text-4xl xl:text-6xl text-white">
           <span className="text-[var(--orange)] text-2xl">Testimonials</span>
@@ -31,7 +34,7 @@ const Testimonials = () => {
         <div></div>
         <div></div>
         <img
-          className="w-68 h-80 object-cover m-auto"
+          className="w-68 h-80 object-cover border-2 border-[var(--orange)] m-auto"
           src={testimonialsData[selected].image}
           alt="customer"
         />

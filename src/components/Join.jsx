@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import JoinNowButton from "./JoinNowButton";
 
 const Join = () => {
   const form = useRef();
@@ -43,20 +44,15 @@ const Join = () => {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="email-container flex gap-4 bg-gray-500 py-4 px-8 w-fit"
+          className="email-container flex flex-wrap justify-center items-center gap-4 bg-gray-500 py-4 px-8 w-fit"
         >
           <input
-            className="outline-none bg-transparent"
+            className="outline-none bg-white"
             type="email"
             name="user_email"
             placeholder="Enter your email here..."
           />
-          <button
-            type="submit"
-            className="btn bg-[var(--orange)] text-white hover:bg-white hover:text-[var(--orange)]"
-          >
-            Send
-          </button>
+          <JoinNowButton />
         </form>
       </div>
     </div>

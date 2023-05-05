@@ -4,6 +4,7 @@ import Programs from "../components/Programs";
 import Reasons from "../components/Reasons";
 import Testimonials from "../components/Testimonials";
 import Hero from "../components/Hero";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Plans />
       <Testimonials />
       <Join />
+      <Footer />
     </div>
   );
 };

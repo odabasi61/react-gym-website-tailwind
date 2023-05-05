@@ -3,10 +3,12 @@ import heroImg from "../assets/hero_image.png";
 import heroImgBack from "../assets/hero_image_back.png";
 import heart from "../assets/heart.png";
 import calories from "../assets/calories.png";
+import JoinNowButton from "./JoinNowButton";
 
 const Hero = () => {
   return (
     <div className="hero flex flex-col gap-6 lg:gap-0 lg:flex-row justify-between pb-16 lg:pb-24">
+      <div className="blur h-[30rem] w-[22rem] lg:w-[30rem]"></div>
       <div className="left w-full lg:w-[75%] flex gap-8 flex-col">
         <Header />
 
@@ -78,9 +80,9 @@ const Hero = () => {
       </div>
 
       <div className="right w-full lg:w-[25%] p-4 bg-[var(--orange)] relative">
-        <button className="btn absolute right-2 sm:right-16 top-6 bg-white">
-          Join Now
-        </button>
+        <div className="absolute right-2 sm:right-16 top-6">
+          <JoinNowButton />
+        </div>
 
         <div className="heart-rate flex flex-col gap-4 bg-[var(--darkGrey)] w-fit p-4 items-center rounded-lg absolute right-2 sm:right-16 top-28">
           <img src={heart} alt="heart" className="w-8" />

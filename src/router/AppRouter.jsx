@@ -1,10 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
-import Footer from "../components/Footer";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Privacy from "../pages/Privacy";
 import Support from "../pages/Support";
+import NotFound from "../pages/NotFound";
 
 const AppRouter = () => {
   return (
@@ -16,8 +16,8 @@ const AppRouter = () => {
           <Route path="contact" element={<Contact />} />
           <Route path="privacy" element={<Privacy />} />
           <Route path="support" element={<Support />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
-        <Footer />
       </BrowserRouter>
     </div>
   );
