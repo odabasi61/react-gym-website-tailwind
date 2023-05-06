@@ -5,3 +5,4 @@ Which technologies and libraries are used in this project?
 - React-icons
 - Emailjs library
 - React-router-dom
+- Number-counter

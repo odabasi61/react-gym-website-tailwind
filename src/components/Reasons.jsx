@@ -11,7 +11,7 @@ const Reasons = () => {
   return (
     <div
       name="why"
-      className="reasons px-8 flex gap-4 flex-col-reverse sm:flex-row pb-16 lg:pb-24"
+      className="reasons px-8 flex gap-4 lg:gap-16 flex-col-reverse sm:flex-row pb-16 lg:pb-24"
     >
       <div className="left flex gap-4 w-full">
         <div className="w-[30%]">

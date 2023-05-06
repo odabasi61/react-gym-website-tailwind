@@ -69,12 +69,12 @@ const Header = () => {
           </button>
         )}
       </nav>
-      <a
-        href="#"
-        className="fixed p-1 rounded-full bottom-20 right-10 z-10 border-2 border-white bg-white text-[var(--orange)] hover:bg-[var(--orange)] hover:text-white duration-300"
+      <Link
+        to="home"
+        className="fixed p-1 rounded-full bottom-20 right-10 z-10 border-2 border-white bg-white text-[var(--orange)] hover:bg-[var(--orange)] hover:text-white duration-300 cursor-pointer"
       >
         <AiOutlineArrowUp size={40} />
-      </a>
+      </Link>
     </div>
   );
 };

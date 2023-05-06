@@ -29,7 +29,7 @@ const Contact = () => {
                 type="text"
                 id="name"
                 placeholder="Your name"
-                className="outline-none py-1 ps-2"
+                className="outline-none py-1 ps-2 text-black"
               />
             </div>
             <div className="flex flex-col gap-2 mb-4">
@@ -38,7 +38,7 @@ const Contact = () => {
                 type="text"
                 id="lastname"
                 placeholder="Your last name"
-                className="outline-none py-1 ps-2"
+                className="outline-none py-1 ps-2 text-black"
               />
             </div>
             <div className="flex flex-col gap-2 mb-4">
@@ -47,7 +47,7 @@ const Contact = () => {
                 type="text"
                 id="phone"
                 placeholder="Your phone number"
-                className="outline-none py-1 ps-2"
+                className="outline-none py-1 ps-2 text-black"
               />
             </div>
             <div className="flex flex-col gap-2 mb-4">
@@ -56,13 +56,13 @@ const Contact = () => {
                 type="email"
                 id="email"
                 placeholder="Your email"
-                className="outline-none py-1 ps-2"
+                className="outline-none py-1 ps-2 text-black"
               />
             </div>
             <div className="flex flex-col gap-2">
               <label htmlFor="message">Message</label>
               <textarea
-                className="resize-none outline-none py-1 ps-2"
+                className="resize-none outline-none py-1 ps-2 text-black"
                 id="message"
                 placeholder="Your message"
               ></textarea>

@@ -24,6 +24,7 @@
   gap: 6rem;
   overflow: hidden;
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -39,10 +40,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {
@@ -108,4 +105,59 @@ body {
   border-radius: 50%;
   filter: blur(180px);
   z-index: -10;
+}
+
+.heart {
+  animation: pulsate 1s ease-in-out 0.1s infinite;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
+
+.transform {
+  animation: transformation 4s ease-in-out 0.1s infinite;
+}
+
+@keyframes transformation {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(350px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  @keyframes transformation {
+    0% {
+      transform: translateX(0);
+    }
+
+    50% {
+      transform: translateX(210px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
 }

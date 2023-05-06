@@ -18,7 +18,7 @@ const Support = () => {
           commonly asked questions and concerns that our clients have and how to
           address them.
         </p>
-        <h2 className="text-2xl font-semibold">FAQs:</h2>
+        <h2 className="text-2xl font-semibold text-[var(--orange)]">FAQs:</h2>
 
         <div id="accordion-collapse" data-accordion="collapse">
           <h2 id="accordion-collapse-heading-1">
@@ -300,7 +300,9 @@ const Support = () => {
             </div>
           </div>
 
-          <h2 className="text-2xl font-semibold pt-10">Tutorials:</h2>
+          <h2 className="text-2xl font-semibold pt-10 text-[var(--orange)]">
+            Tutorials:
+          </h2>
 
           <h2 id="accordion-collapse-heading-8">
             <button
@@ -458,7 +460,9 @@ const Support = () => {
             </div>
           </div>
 
-          <h2 className="text-2xl font-semibold pt-10">Troubleshooting:</h2>
+          <h2 className="text-2xl font-semibold pt-10 text-[var(--orange)]">
+            Troubleshooting:
+          </h2>
 
           <h2 id="accordion-collapse-heading-12">
             <button
