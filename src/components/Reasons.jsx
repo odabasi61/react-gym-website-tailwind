@@ -36,7 +36,7 @@ const Reasons = () => {
         <span className=" text-[var(--orange)]">Some reasons</span>
         <div className="text-white text-xl md:text-3xl lg:text-4xl xl:text-5xl py-4">
           <span className="stroke">Why </span>
-          <span>Chose us?</span>
+          <span>Us?</span>
         </div>
 
         <div className="details flex flex-col gap-4 pb-4">

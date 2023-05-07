@@ -31,7 +31,8 @@ const Hero = () => {
             <span>Body</span>
           </div>
           <div>
-            <span>Strong Mind</span>
+            <span>Strong</span>
+            <span className="stroke"> Mind</span>
           </div>
           <div>
             <p>
