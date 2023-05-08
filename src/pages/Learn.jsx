@@ -1,4 +1,5 @@
 import HomePageButton from "../components/HomePageButton";
+import { learnMore } from "../helper/learnMore";
 
 const Learn = () => {
   return (
@@ -26,6 +27,23 @@ const Learn = () => {
           discounts on personal training sessions, priority booking for group
           fitness classes, and access to exclusive events and promotions.
         </p>
+        <div className="flex flex-col flex-wrap items-center justify-center sm:flex-row gap-5">
+          {learnMore.map((learn, index) => (
+            <div key={index} className="card rounded-full relative">
+              <div className="front-card w-72 h-72 lg:w-96 lg:h-96 bg-white">
+                <img
+                  src={learn.image}
+                  alt="fitnes pic"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="back-card text-center text-white bg-[var(--orange)]">
+                <h3>{learn.title}</h3>
+                <p>{learn.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
