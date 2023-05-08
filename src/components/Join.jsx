@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import JoinNowButton from "./JoinNowButton";
+import { BsFillSendFill } from "react-icons/bs";
 
 const Join = () => {
   const form = useRef();
@@ -52,7 +53,10 @@ const Join = () => {
             name="user_email"
             placeholder="Enter your email here..."
           />
-          <JoinNowButton />
+          <button className="text-[var(--orange)] bg-white hover:bg-[var(--orange)] hover:text-white duration-300 border border-[var(--orange)] font-bold py-2 px-3 flex gap-2 items-center justify-center">
+            <span>Send</span>
+            <BsFillSendFill />
+          </button>
         </form>
       </div>
     </div>

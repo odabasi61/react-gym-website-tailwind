@@ -5,6 +5,7 @@ import heart from "../assets/heart.png";
 import calories from "../assets/calories.png";
 import JoinNowButton from "./JoinNowButton";
 import NumberCounter from "number-counter";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -90,12 +91,18 @@ const Hero = () => {
         </div>
 
         <div className="hero-buttons flex gap-4 px-4">
-          <button className="text-white py-1 bg-[var(--orange)] w-32 border-2 border-[var(--orange)] hover:bg-white hover:text-[var(--orange)]">
+          <Link
+            to={"login/"}
+            className="text-white text-center cursor-pointer py-1 bg-[var(--orange)] w-32 border-2 border-[var(--orange)] hover:bg-white hover:text-[var(--orange)]"
+          >
             Get Started
-          </button>
-          <button className="text-white py-1 bg-transparent w-32 border-2 border-[var(--orange)] hover:bg-white hover:text-[var(--orange)]">
+          </Link>
+          <Link
+            to={"learn"}
+            className="text-white text-center cursor-pointer py-1 bg-transparent w-32 border-2 border-[var(--orange)] hover:bg-white hover:text-[var(--orange)]"
+          >
             Learn More
-          </button>
+          </Link>
         </div>
       </div>
 

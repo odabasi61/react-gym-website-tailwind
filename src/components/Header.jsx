@@ -1,4 +1,3 @@
-import Logo from "../assets/logo.png";
 import { AiOutlineMenu, AiOutlineArrowUp } from "react-icons/ai";
 import { HiXMark } from "react-icons/hi2";
 import { useState } from "react";
@@ -13,7 +12,10 @@ const Header = () => {
 
   return (
     <div className="header p-4 flex justify-between items-center relative">
-      <img src={Logo} alt="logo" className="w-40 h-12" />
+      <div className="flex flex-col text-center font-bold text-xl sm:text-2xl md:text-3xl text-white md:ps-4">
+        <span>FitZone</span>
+        <span>Gym</span>
+      </div>
       <nav className="flex items-center">
         {nav ? (
           <ul className="header-menu text-center px-[20%] pt-8 flex flex-col lg:hidden gap-8 bg-white list-none z-40 absolute top-0 left-0 w-full h-[100vh]">
