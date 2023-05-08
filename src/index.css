@@ -76,6 +76,26 @@ body {
   height: 2rem;
 }
 
+.card:hover .front-card {
+  transform: rotateY(-180deg);
+}
+
+.card:hover .back-card {
+  transform: rotateY(0);
+}
+
+.front-card,
+.back-card {
+  box-shadow: rgba(11, 9, 9, 0.35) 0px 5px 15px;
+  backface-visibility: hidden;
+  transition: all 0.8s ease;
+  height: 100%;
+}
+
+.back-card {
+  transform: rotateY(180deg);
+}
+
 .plan:nth-child(2) {
   background: var(--planCard);
   transform: scale(1.1);

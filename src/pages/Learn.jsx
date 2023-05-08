@@ -29,17 +29,17 @@ const Learn = () => {
         </p>
         <div className="flex flex-col flex-wrap items-center justify-center sm:flex-row gap-5">
           {learnMore.map((learn, index) => (
-            <div key={index} className="card rounded-full relative">
-              <div className="front-card w-72 h-72 lg:w-96 lg:h-96 bg-white">
+            <div key={index} className="card w-80 h-80 lg:w-96 lg:h-96 rounded-full relative">
+              <div className="front-card rounded-full absolute left-0 top-0 w-80 h-80 lg:w-96 lg:h-96">
                 <img
                   src={learn.image}
                   alt="fitnes pic"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="back-card text-center text-white bg-[var(--orange)]">
-                <h3>{learn.title}</h3>
-                <p>{learn.desc}</p>
+              <div className="back-card flex flex-col justify-center px-8 rounded-full absolute left-0 top-0 w-80 h-80 lg:w-96 lg:h-96 text-center text-white bg-[var(--orange)]">
+                <h3 className="font-bold pb-2">{learn.title}</h3>
+                <p className="text-sm">{learn.desc}</p>
               </div>
             </div>
           ))}
